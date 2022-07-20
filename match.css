@@ -44,9 +44,8 @@ body{
 .live-content p{
     font-weight: normal;
     font-size: 16px;
-    text-align: left;
 }
- .live-button-wrap{
+.live-button-wrap{
     background: #DD0000;
     border-radius: 7px;
     margin-top: 40px;
@@ -90,83 +89,6 @@ body{
     gap: 10px;
     margin-bottom: 70px;
 }
-.blogs{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 20px;
-}
-.blog{
-    box-shadow: 1px 0px 11px gray;
-    border-radius: 9px;
-}
-.blog img{
-    width: 100%;
-}
-.blog h4{
-    border: 1px solid gray;
-    display: inline-block;
-    padding: 5px;
-    border-radius: 7px;
-    margin-left: 18px;
-    font-weight: 400;
-}
-.blog p{
-    color: #161616;
-    font-weight: 300;
-    font-size: 18px;
-    padding: 7px;
-    margin-left: 15px;
-}
-.button-wraping{
-    background-color: #DD0000;
-    width: 160px;
-    height: 45px;
-    border-radius: 5px;
-    margin-bottom: 70px;
-    position: relative;
-    display: none;
-    cursor: pointer;
-}
-.button-wraping a{
-    position: absolute;
-    margin: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 18px;
-    font-weight: 400;
-}
-.button-wraping:hover{
-    background-color: #fff;
-    transition: all .5s ease-in;
-}
-.button-wraping:hover a{
-    color:#DD0000;
-}
-.button-wraping a{
-    color: #fff;
-    text-decoration: none;
-
-}
-.time-cmt{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-left: 18px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-.time-cmt img{
-    margin-right: 10px;
-}
-.time-cmt .icon{
-    width: 32px;
-    height: 32px;
-}
-.time-cmt span{
-    margin-right: 20px;
-}
-
 .aside{
     background-color: #161616;
     width: 200px;
@@ -178,6 +100,13 @@ body{
     border-radius: 7px;
     margin: 0 auto;
 }
+#btn-upcomming{
+    background-color: #DD0000;
+    border: none;
+}
+#btn-upcomming a{
+    color: #fff;
+}
 .aside .btn{
     background-color: #fff;
     width: 160px;
@@ -185,22 +114,42 @@ body{
     border-radius: 7px;
     margin: 15px 0;
 }
-.aside #btn-blog{
-    background-color: #DD0000;
-    border: none;
-}
- #btn-blog a{
-    color: #fff;
-}
-.aside #btn-blog:focus{
-    background-color: #DD0000;
-}
 .aside .btn a{
     text-decoration: none;
     color: #1d1a1a;
     font-size: 16px;
     font-weight: 400;
 }
+.matches{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.match{
+    box-shadow: 1px 0px 11px gray;
+    border-radius: 9px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.match h3{
+    margin-top: 12px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: #161616;
+}
+.match p{
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+}
+
 
 /* ==============
     footer section styling
@@ -264,7 +213,7 @@ Media query || css
         font-size: 40px;
     }
     .live-content p{
-        text-align: left;
+        text-align: center;
         margin: 0;
         padding: 0 15px;
     }
@@ -277,22 +226,11 @@ Media query || css
         display: flex;
         flex-direction: column;
     }
-    .blogs{
+    .matches{
         grid-template-columns: repeat(1,1fr);
-    }
-    .blog{
-        width: 100%;
-        height: 100%;
-    }
-    .blog img{
-        width: 100%;
     }
     .time-cmt{
         margin-top: 0;
-    }
-    .time-cmt .icon{
-        width: 32px;
-        height: 32px;
     }
     .aside{
         background-color: #fff;
@@ -301,7 +239,9 @@ Media query || css
         border: none;
         box-shadow: 1px 0 11px gray;
     }
-
+    .horizontal-line{
+        width: 100%;
+    }
     footer{
         display: flex;
         height: auto;
@@ -314,17 +254,14 @@ Media query || css
         flex-direction: column;
     }
     .social-icon{
-        margin: 30px 0px;
-    }
-    .social-icon a{
-        margin: 12px 5px;
+        margin-bottom: 30px;
     }
 }
 
 /* Tablet Devices  */
 @media only screen and (min-width:577px) and (max-width:1200px){
     .live-content p{
-        text-align: left;
+        text-align: center;
         margin: 0;
         padding: 0 15px;
     }
@@ -339,20 +276,17 @@ Media query || css
         flex-direction: column;
         align-items: center;
     }
-    .blogs{
+    .matches{
         grid-template-columns: repeat(2,1fr);
         grid-gap: 15px;
         box-sizing: border-box;
     }
-    .blog{
+    .match{
         width: 100%;
         height: 100%;
     }
     .blog img{
         width: 100%;
-    }
-    .button-wraping{
-        display: inline-block;
     }
     .time-cmt{
         margin-top: 5px;
