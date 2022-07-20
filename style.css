@@ -229,6 +229,9 @@ Media query || css
     .blogs{
         grid-template-columns: repeat(1,1fr);
     }
+    .time-cmt{
+        margin-top: 0;
+    }
     .aside{
         background-color: #fff;
     }
@@ -283,6 +286,9 @@ Media query || css
     }
     .blog img{
         width: 100%;
+    }
+    .time-cmt{
+        margin-top: 5px;
     }
     .time-cmt .icon{
         width: 32px;
