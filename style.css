@@ -14,7 +14,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 90%;
+    width: 87%;
     height: auto;
     margin: 0 auto;
 }
@@ -47,13 +47,18 @@ body{
 }
  .btn-watch{
     background: #DD0000;
-    border: none;
-    color: #fff;
-    width: 150px;
-    height: 40px;
     border-radius: 7px;
     margin-top: 40px;
     margin-left: 13px;
+    height: 60px;
+    width: 200px;
+    border: none;
+    box-sizing: border-box;
+}
+.btn-watch a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
 }
 .image img{
     width: 90%;
@@ -69,6 +74,7 @@ body{
     display: flex;
     margin-top: 70px;
     gap: 10px;
+    margin-bottom: 70px;
 }
 .blogs{
     display: grid;
@@ -112,17 +118,18 @@ body{
 
 .aside{
     background-color: #161616;
-    width: 312px;
-    height: 312px;
+    width: 200px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     border-radius: 7px;
+    margin: 0 auto;
 }
 .aside .btn{
     background-color: #fff;
-    width: 252px;
+    width: 160px;
     height: 64px;
     border-radius: 7px;
     margin: 15px 0;
@@ -142,4 +149,153 @@ body{
     color: #1d1a1a;
     font-size: 16px;
     font-weight: 400;
+}
+
+/* ==============
+    footer section styling
+    ===================== */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    background-color: #161616;
+    flex-direction: column;
+}
+footer .title h1{
+    color: #fff;
+    font-weight: 400;
+    font-size: 40px;
+}
+.horizontal-line{
+    background-color: #ffffff9c;
+    width:  90%;
+    height: 0%;
+    margin: 20px 0;
+}
+footer #settings{
+    color: #B9B9B9;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 12px;
+}
+.social-icon a,i{
+    color: #fff;
+    font-size: 18px;
+    margin: 20px 20px 0px 20px;
+}
+
+/* ======================
+Media query || css
+======================= */
+
+/* Mobile devices  */
+
+@media only screen and (max-width:576px) {
+    .banner-container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .live-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .live-content h1{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        font-size: 40px;
+    }
+    .live-content p{
+        text-align: center;
+        margin: 0;
+        padding: 0 15px;
+    }
+    .image{
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    .blog-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .aside{
+        background-color: #fff;
+    }
+    .btn{
+        border: none;
+        box-shadow: 1px 0 11px gray;
+    }
+    .horizontal-line{
+        width: 100%;
+    }
+    footer{
+        display: flex;
+        height: auto;
+        flex-direction: column;
+    }
+    .fotter-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .social-icon{
+        margin-bottom: 30px;
+    }
+}
+
+/* Tablet Devices  */
+@media only screen and (min-width:577px) and (max-width:1200px){
+    .live-content p{
+        text-align: center;
+        margin: 0;
+        padding: 0 15px;
+    }
+    .live-content h1{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        font-size: 45px;
+    }
+    .blog-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .blogs{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 15px;
+        box-sizing: border-box;
+    }
+    .blog{
+        width: 100%;
+        height: 100%;
+    }
+    .blog img{
+        width: 100%;
+    }
+    .time-cmt .icon{
+        width: 32px;
+        height: 32px;
+    }
+    .aside{
+        background-color: #fff;
+        flex-direction: row;
+        height: auto;
+        width: 478px;
+    }
+    .aside .btn{
+        border: none;
+        height: 50px;
+    }
 }
