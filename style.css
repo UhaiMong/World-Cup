@@ -26,6 +26,10 @@ body{
     margin-top: 30px;
     background-color: #161616;
     border-radius: 20px;
+    transition: all .6s ease-in-out;
+}
+.banner-container:hover{
+    background-color: #38adcacf;
 }
 .live-content{
     margin: 40px 20px 40px 40px;
@@ -98,6 +102,10 @@ body{
 .blog{
     box-shadow: 1px 0px 11px gray;
     border-radius: 9px;
+    transition: all .5s ease-in-out;
+}
+.blog:hover{
+    background-color: #6ea4b7a0;
 }
 .blog img{
     width: 100%;
