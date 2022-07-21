@@ -26,6 +26,10 @@ body{
     margin-top: 30px;
     background-color: #161616;
     border-radius: 20px;
+    transition: all .6s ease-in-out;
+}
+.banner-container:hover{
+    background-color: #38adcacf;
 }
 .live-content{
     margin: 40px 20px 40px 40px;
@@ -122,7 +126,7 @@ body{
 }
 .matches{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
     grid-gap: 20px;
 }
 .match{
@@ -130,6 +134,10 @@ body{
     border-radius: 9px;
     box-sizing: border-box;
     padding: 20px;
+    transition: all .5s ease-in-out;
+}
+.match:hover{
+    background-color: aqua;
 }
 .team{
     display: flex;
